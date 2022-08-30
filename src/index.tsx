@@ -1,11 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./App";
+import { BrowserRouter as Router } from "react-router-dom";
+import './index.css';
 
-const App = () => (
-  <h1>My React and TypeScript App!</h1>
-);
 
 ReactDOM.render(
-  <App />,
+  <React.StrictMode>
+    <Router>
+      <App />
+    </Router>
+  </React.StrictMode>,
   document.getElementById("root")
 );
